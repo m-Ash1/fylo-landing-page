@@ -16,7 +16,7 @@ The designs were created to the following widths:
 
 ### Accent
 
-- Bright Blue: hsl(224, 93%, 58%)
+- Bright Blue: hsl(224, 93%, 58%) //btn
 - Moderate Cyan: hsl(170, 45%, 43%)
 
 ### Neutral
