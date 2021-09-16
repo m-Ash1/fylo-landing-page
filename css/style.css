@@ -53,8 +53,8 @@ nav .container ul {
   font-weight: 700;
   color: hsl(238, 22%, 44%);
 }
-li{
-    cursor: pointer;
+li {
+  cursor: pointer;
 }
 .first-section {
   padding: 100px 0px 320px;
@@ -123,9 +123,9 @@ li{
   letter-spacing: 1.5px;
   transition: 0.1s;
 }
-.main-btn:hover{
-    background-color: #6B9BFF;
-    cursor: pointer;
+.main-btn:hover {
+  background-color: #6b9bff;
+  cursor: pointer;
 }
 ::placeholder {
   opacity: 0.5;
@@ -157,17 +157,17 @@ li{
   align-items: center;
   color: hsl(170, 45%, 43%);
   border-bottom: 1px hsl(170, 45%, 43%) solid;
-  width: fit-content;
+  width: 171px;
   margin-top: 25px;
   transition: 0.1s;
 }
 .section-link img {
   margin-left: 5px;
 }
-.section-link:hover{
-    color: hsl(170, 68%, 60%);
-    border-bottom: 1px hsl(170, 68%, 60%) solid;
-    cursor: pointer;
+.section-link:hover {
+  color: hsl(170, 68%, 60%);
+  border-bottom: 1px hsl(170, 68%, 60%) solid;
+  cursor: pointer;
 }
 
 .testmonial-card {
@@ -284,12 +284,114 @@ footer {
   border-radius: 50%;
 }
 
-.col > div:hover{
-    color: #6C9CFF;
-    cursor: pointer;
+.col > div:hover {
+  color: #6c9cff;
+  cursor: pointer;
 }
-.col-4 i:hover{
-    color: #6C9CFF;
-    border-color: #6C9CFF;
-    cursor: pointer;
+.col-4 i:hover {
+  color: #6c9cff;
+  border-color: #6c9cff;
+  cursor: pointer;
+}
+
+@media (max-width: 475px) {
+  nav .logo {
+    display: flex;
+    align-items: center;
+  }
+  nav .logo img {
+    width: 100%;
+  }
+  nav .container ul {
+    width: 225px;
+  }
+  .first-section .container {
+    flex-wrap: wrap;
+  }
+  .first-section .right-part {
+    order: 1;
+    width: 100% !important;
+  }
+  .first-section .left-part {
+    order: 2;
+    width: 100% !important;
+    text-align: center;
+  }
+  .first-section {
+    padding: 60px 0px 125px;
+  }
+  .heading {
+    font-size: 26px;
+  }
+  .input-btn {
+    flex-direction: column;
+  }
+  .input-btn input {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    height: 50px;
+  }
+  .input-btn .main-btn {
+    width: 100%;
+  }
+  .second-section .container {
+    flex-direction: column;
+  }
+  .second-section .right-part {
+    order: 1;
+    width: 100% !important;
+  }
+  .second-section .left-part {
+    order: 2;
+    width: 100% !important;
+    text-align: center;
+    padding: 70px 0 0 0;
+  }
+  .second-section .container .left-part .desc {
+    width: 100%;
+  }
+  .section-link {
+    margin: 25px auto 40px;
+  }
+  .testmonial-card {
+    width: 90%;
+    text-align: start;
+    margin: 0 auto;
+  }
+  .second-section .heading{
+    font-size: 20px;
+  }
+  .second-section .desc{
+    text-align: start;
+  }
+  .third-section .container {
+    flex-direction: column;
+  }
+  .third-section .container .left-part,
+  .third-section .container .right-part {
+    width: 100%;
+    text-align: center;
+  }
+  .third-section .container .left-part .desc {
+    margin-bottom: 20px;
+  }
+
+  .third-section .container .right-part .main-btn {
+    width: 100%;
+  }
+  .grid-footer {
+    grid-template-columns: auto;
+  }
+  .grid-footer .col {
+    margin-bottom: 20px;
+  }
+  .col-4 {
+    justify-content: center;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .right-part img {
+    width: 100% !important;
+  }
 }
